@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iphone | Blooog]]></title>
+  <link href="http://moriiimo.github.com/blog/categories/iphone/atom.xml" rel="self"/>
+  <link href="http://moriiimo.github.com/"/>
+  <updated>2013-03-17T11:24:42+09:00</updated>
+  <id>http://moriiimo.github.com/</id>
+  <author>
+    <name><![CDATA[moriiimo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iPhoneアプリ開発の用語　自分用まとめ]]></title>
+    <link href="http://moriiimo.github.com/blog/2013/03/17/iphoneapp-devword/"/>
+    <updated>2013-03-17T11:16:00+09:00</updated>
+    <id>http://moriiimo.github.com/blog/2013/03/17/iphoneapp-devword</id>
+    <content type="html"><![CDATA[<p>iPhoneアプリ開発、、とにかく敷居が高い..
+自分用メモ。随時アップデート予定..</p>
+
+<h2>用語</h2>
+
+<h3>Certificate(サーティフィケート）</h3>
+
+<p>・どのDevelopperなのかがわかるようにするための証明書。</p>
+
+<p>Distributionと呼ばれる本番用と、developmentと呼ばれる開発用がある。　</p>
+
+<h2>Devices</h2>
+
+<p>・IphoneやIPadなどの実機。AppStoreに申請せずに開発のために実機にいれる場合にProvisioningPotalに「どれを使うか」を登録しなければいけない。</p>
+
+<p>・また１つのProvisioningPotalには100台までしか実機が登録できず、Maxになってしまった場合、更新月がくるまで削除できない</p>
+
+<p>・iphoneアプリを実機で動かすときなどに使う、実機で動かすためにはデバイス登録をしなくてはいけない。
+http://kentaro-shimizu.com/lecture/iphone/step3.html</p>
+
+<h2>App IDs</h2>
+
+<p>アプリの固有のID。登録制限はなさそうだが、
+テストなどで色々作ってみたい場合、com.xxxxxx.＊ のように、＊をつかうことで、汎用的に使えるIDを作ることができる。（ただし、Push通知やGameCenterなど一部の機能は、*付きのAppIDでは利用できない）</p>
+
+<h2>Provisioning</h2>
+
+<p>Certificate作られる。
+「どの証明書（証明者（Certificate））で、何のアプリ（AppID）を、どの端末（Devices）にインストールするのか」を決めたファイル。
+distribute用のものは、Deviceが選択できない（AdHocの場合はできる）</p>
+]]></content>
+  </entry>
+  
+</feed>
